@@ -83,7 +83,7 @@ Beverage manufacturing operations operate at blinding line velocities (1,200+ ca
   - **PACK01**: Automated Shrink Sleeve Steam Tunnel, Corrugated Tray Packer & 6-Axis Palletizer.
 - **Intelligent Camera Rig:** Smoothly glides across 3D coordinates to focus on bottleneck machinery (`M07`) with custom zoom and pitch.
 
-### 2. Sensory AI Visuals (No Generic 2D Charts)
+### 2. Sensory AI & Telemetry Visualizations
 - **Causal Propagation Ribbon:** 3D glowing spline tracing real-time constraint cascades:
   $$\text{M07 (Isobaric Leak)} \longrightarrow \text{Line 3 Conveyor (Choked to 68\%)} \longrightarrow \text{QC01 (6.4\% Underfill Rejects)} \longrightarrow \text{SHIP01 (Walmart SLA Risk)}$$
 - **State Intelligence Field:** Dynamic particle network reflecting system operational entropy, foaming risk, and pacing stability.
