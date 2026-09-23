@@ -219,7 +219,7 @@ $$\text{For } M07 \text{ with } 4.0\text{h downtime: } \Delta Q_{\text{lost}} = 
 ### 2. SLA Delay & Financial Risk Calculation
 Shipment delay multiplier across downstream orders:
 $$t_{\text{delay}} = t_{\text{down}} \times 1.5$$
-$$\text{Financial Risk (\$) } = \sum_{o \in \text{Orders}(L_3)} \text{PenaltyPerHour}(o) \times t_{\text{delay}}$$
+$$\text{Financial Risk (USD)} = \sum_{o \in \text{Orders}(L_3)} \text{PenaltyPerHour}(o) \times t_{\text{delay}}$$
 
 ### 3. Dynamic Energy Peak Shaving (ISO 50001)
 $$\Delta E_{\text{saved}} = E_{\text{nominal}} - E_{\text{cap}} = 18,400\text{ kWh} - 15,900\text{ kWh} = 2,500\text{ kWh saved}$$
