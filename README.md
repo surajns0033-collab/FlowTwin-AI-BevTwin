@@ -15,6 +15,10 @@
 
 **An AI-native 3D Digital Twin for High-Speed Beverage Bottling, Canning & Packaging plants. Autonomous Google ADK agents monitor real-time isobaric filling pressures, carbonation levels, and pasteurization thermal loops — pinpointing causal bottlenecks, simulating what-if scenarios, and executing dynamic load-balancing recovery plans.**
 
+<br/>
+
+[![FlowTwin AI BevTwin Live 3D Operations Cockpit](docs/assets/bevtwin_live_preview.png)](docs/assets/bevtwin_live_preview.png)
+
 </div>
 
 ---
