@@ -317,7 +317,7 @@ Agent responses are grounded in verified industrial documentation in `knowledge/
 ## 📂 Comprehensive Repository Structure
 
 ```
-Manufacturing-Intelligent-Operations-Industrial-Efficiency-FlowTwin-AI/
+FlowTwin-AI-BevTwin/
 ├── apps/
 │   └── web/                         # Next.js 14 Beverage Twin Web Application
 │       ├── app/                     # Next.js App Router
