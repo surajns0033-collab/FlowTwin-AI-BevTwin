@@ -1,0 +1,81 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Next.js Build Outputs
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+
+# Cloud local caches & buckets
+cloud/gcs_local_bucket/
+cloud/__pycache__/
+agents/__pycache__/
+simulation/__pycache__/
+
+# Testing & MCP artifacts
+.playwright-mcp/
+.playwright/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+credentials.json
+service-account*.json
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+.idea/
+.vscode/
+*.sublime-workspace
+*.swp
+*.swo
+
+# Unwanted / AI generated clutter
+ChatGPT Image*
+*ChatGPT*

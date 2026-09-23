@@ -1,0 +1,340 @@
+{
+  "mode": "Local Firestore Emulated Cache",
+  "project_id": "flowtwin-ai-prod",
+  "collections": {
+    "factories": {
+      "factory_primary": {
+        "id": "FAC-01",
+        "name": "Precision Industrial Facility Alpha",
+        "location": "Sector 4, Industrial Zone",
+        "status": "OPERATIONAL",
+        "lines": [
+          "Line 1",
+          "Line 2",
+          "Line 3"
+        ],
+        "updated_at": 1790012678.4464068
+      }
+    },
+    "machines": {
+      "M01": {
+        "id": "M01",
+        "name": "5-Axis CNC Mill Alpha",
+        "line": "L1",
+        "status": "nominal",
+        "capacity_units_hr": 160,
+        "utilization": 0.94,
+        "power_kw": 42.5,
+        "temperature_c": 58.2,
+        "vibration_mms": 1.2,
+        "health_score": 96,
+        "position_3d": [
+          -12,
+          0,
+          -6
+        ],
+        "dependencies": []
+      },
+      "M02": {
+        "id": "M02",
+        "name": "Hydraulic Stamping Press",
+        "line": "L1",
+        "status": "nominal",
+        "capacity_units_hr": 150,
+        "utilization": 0.91,
+        "power_kw": 68.0,
+        "temperature_c": 62.4,
+        "vibration_mms": 2.1,
+        "health_score": 93,
+        "position_3d": [
+          -6,
+          0,
+          -6
+        ],
+        "dependencies": [
+          "M01"
+        ]
+      },
+      "M03": {
+        "id": "M03",
+        "name": "Ultrasonic Wash & Deburr",
+        "line": "L1",
+        "status": "nominal",
+        "capacity_units_hr": 155,
+        "utilization": 0.89,
+        "power_kw": 24.1,
+        "temperature_c": 44.0,
+        "vibration_mms": 0.8,
+        "health_score": 98,
+        "position_3d": [
+          0,
+          0,
+          -6
+        ],
+        "dependencies": [
+          "M02"
+        ]
+      },
+      "M04": {
+        "id": "M04",
+        "name": "Twin-Screw Extruder",
+        "line": "L2",
+        "status": "nominal",
+        "capacity_units_hr": 140,
+        "utilization": 0.88,
+        "power_kw": 55.4,
+        "temperature_c": 71.0,
+        "vibration_mms": 1.6,
+        "health_score": 91,
+        "position_3d": [
+          -12,
+          0,
+          0
+        ],
+        "dependencies": []
+      },
+      "M05": {
+        "id": "M05",
+        "name": "Precision CNC Lathe",
+        "line": "L2",
+        "status": "nominal",
+        "capacity_units_hr": 135,
+        "utilization": 0.86,
+        "power_kw": 38.2,
+        "temperature_c": 54.1,
+        "vibration_mms": 1.1,
+        "health_score": 95,
+        "position_3d": [
+          -6,
+          0,
+          0
+        ],
+        "dependencies": [
+          "M04"
+        ]
+      },
+      "M06": {
+        "id": "M06",
+        "name": "Automated Polish Station",
+        "line": "L2",
+        "status": "nominal",
+        "capacity_units_hr": 140,
+        "utilization": 0.87,
+        "power_kw": 28.0,
+        "temperature_c": 49.3,
+        "vibration_mms": 0.9,
+        "health_score": 97,
+        "position_3d": [
+          0,
+          0,
+          0
+        ],
+        "dependencies": [
+          "M05"
+        ]
+      },
+      "M07": {
+        "id": "M07",
+        "name": "High-Velocity Mill & Drill",
+        "line": "L3",
+        "status": "critical_warning",
+        "capacity_units_hr": 190,
+        "utilization": 0.62,
+        "power_kw": 61.8,
+        "temperature_c": 84.6,
+        "vibration_mms": 4.8,
+        "health_score": 58,
+        "position_3d": [
+          -10,
+          0,
+          6
+        ],
+        "dependencies": [],
+        "warning_details": "Bearing spindle thermal saturation (84.6\u00c2\u00b0C > 75\u00c2\u00b0C threshold). Vibration harmonic at 4.8mm/s. Downstream starving Line 3 output."
+      },
+      "M08": {
+        "id": "M08",
+        "name": "6-Axis Robotic Welding Cell",
+        "line": "L3",
+        "status": "constrained",
+        "capacity_units_hr": 190,
+        "utilization": 0.61,
+        "power_kw": 74.0,
+        "temperature_c": 66.0,
+        "vibration_mms": 1.5,
+        "health_score": 82,
+        "position_3d": [
+          -4,
+          0,
+          6
+        ],
+        "dependencies": [
+          "M07"
+        ]
+      },
+      "QC01": {
+        "id": "QC01",
+        "name": "Multi-Spectral Optical Scanner",
+        "line": "INSPECTION",
+        "status": "warning",
+        "capacity_units_hr": 250,
+        "utilization": 0.98,
+        "power_kw": 18.5,
+        "temperature_c": 38.0,
+        "vibration_mms": 0.3,
+        "health_score": 88,
+        "position_3d": [
+          6,
+          0,
+          -2
+        ],
+        "dependencies": [
+          "M03",
+          "M06",
+          "M08"
+        ]
+      },
+      "QC02": {
+        "id": "QC02",
+        "name": "High-Res Ultrasonic Flaw Scanner",
+        "line": "INSPECTION",
+        "status": "nominal",
+        "capacity_units_hr": 250,
+        "utilization": 0.54,
+        "power_kw": 19.1,
+        "temperature_c": 37.2,
+        "vibration_mms": 0.2,
+        "health_score": 98,
+        "position_3d": [
+          6,
+          0,
+          3
+        ],
+        "dependencies": [
+          "M03",
+          "M06",
+          "M08"
+        ]
+      },
+      "PACK01": {
+        "id": "PACK01",
+        "name": "Robotic Box & Pallet Cell",
+        "line": "PACKAGING",
+        "status": "nominal",
+        "capacity_units_hr": 600,
+        "utilization": 0.72,
+        "power_kw": 31.0,
+        "temperature_c": 41.5,
+        "vibration_mms": 0.7,
+        "health_score": 96,
+        "position_3d": [
+          12,
+          0,
+          0
+        ],
+        "dependencies": [
+          "QC01",
+          "QC02"
+        ]
+      }
+    },
+    "production_state": {
+      "current_shift": {
+        "output_units": 8200,
+        "target_units": 10000,
+        "oee": 0.82,
+        "active_bottleneck": "M07",
+        "updated_at": 1790012678.4464443
+      }
+    },
+    "inventory_state": {
+      "raw_feed": {
+        "level": 84,
+        "unit": "%",
+        "status": "OPTIMAL"
+      },
+      "wip_buffer": {
+        "level": 62,
+        "unit": "%",
+        "status": "ELEVATED"
+      },
+      "finished_goods": {
+        "level": 91,
+        "unit": "%",
+        "status": "OPTIMAL"
+      }
+    },
+    "quality_state": {
+      "qc01": {
+        "pass_rate": 0.942,
+        "inspected_hr": 140,
+        "defect_rate": 0.058
+      },
+      "qc02": {
+        "pass_rate": 0.985,
+        "inspected_hr": 95,
+        "defect_rate": 0.015
+      }
+    },
+    "energy_state": {
+      "current_kwh": 456.2,
+      "shift_total_kwh": 18400,
+      "target_kwh": 16000,
+      "carbon_intensity_kg": 7360,
+      "power_factor": 0.94
+    },
+    "scenarios": {
+      "baseline": {
+        "name": "Current Line 3 Constraint",
+        "output": 8200,
+        "oee": 0.82
+      },
+      "m07_down_4h": {
+        "name": "M07 Down 4h",
+        "output": 6400,
+        "delay_hours": 6
+      },
+      "load_reroute": {
+        "name": "AI Dynamic Reroute",
+        "output": 9450,
+        "delay_hours": 1
+      }
+    },
+    "agent_sessions": {
+      "session_latest": {
+        "model": "gemini-3.8-flash",
+        "last_query": "Why is Line 3 slow?",
+        "causal_path": [
+          "M07",
+          "Line 3",
+          "QC01",
+          "Shipment"
+        ],
+        "timestamp": 1790012678.446464
+      }
+    },
+    "alerts": {
+      "alert_0": {
+        "id": "ALT-071",
+        "severity": "critical",
+        "machine": "M07",
+        "line": "L3",
+        "metric": "Spindle Temperature",
+        "value": "84.6\u00c2\u00b0C",
+        "threshold": "75.0\u00c2\u00b0C",
+        "message": "Thermal runaway protection throttling feed rate by 38%."
+      },
+      "alert_1": {
+        "id": "ALT-072",
+        "severity": "warning",
+        "machine": "QC01",
+        "line": "INSPECTION",
+        "metric": "Buffer Occupancy",
+        "value": "94.6%",
+        "threshold": "85.0%",
+        "message": "Buffer queue bottleneck caused by batch re-inspection."
+      }
+    }
+  },
+  "synced_at": "2026-09-21 17:44:38 UTC"
+}

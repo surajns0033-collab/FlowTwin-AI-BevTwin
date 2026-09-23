@@ -1,0 +1,35 @@
+# Google Agent Runtime Configuration for FlowTwin AI
+name: flowtwin-ai-agent-runtime
+version: 1.0.0
+
+framework:
+  name: adk
+  language: python
+  version: "3.11+"
+
+models:
+  orchestrator:
+    model: gemini-3.8-flash
+    temperature: 0.1
+    caching:
+      implicit: true
+      context_cache_keys: ["factory_topology", "machine_specs"]
+  auxiliary:
+    model: gemini-3.5-flash-lite
+    temperature: 0.0
+
+agents:
+  - name: orchestrator
+    path: agents/orchestrator/orchestrator.py
+  - name: observer
+    path: agents/observer/observer.py
+  - name: causal_analyst
+    path: agents/causal/causal.py
+  - name: simulator
+    path: agents/simulator/simulator.py
+  - name: optimizer
+    path: agents/optimizer/optimizer.py
+
+storage:
+  state: firestore
+  assets: cloud_storage

@@ -1,0 +1,68 @@
+{
+  "factory_id": "BEVTWIN-AUSTIN-01",
+  "name": "BevTwin Industrial Bottling & Canning Twin",
+  "location": "Austin, TX",
+  "nominal_daily_output": 350000,
+  "nominal_daily_energy_kwh": 18400,
+  "lines": [
+    {
+      "id": "L1",
+      "name": "Line 1 - CSD & Sparkling Seltzers Canning",
+      "machines": ["M01", "M02", "M03"],
+      "capacity_per_hour": 33000,
+      "current_utilization": 0.92,
+      "status": "nominal"
+    },
+    {
+      "id": "L2",
+      "name": "Line 2 - Aseptic Juices & Wellness Bottling",
+      "machines": ["M04", "M05", "M06"],
+      "capacity_per_hour": 25000,
+      "current_utilization": 0.88,
+      "status": "nominal"
+    },
+    {
+      "id": "L3",
+      "name": "Line 3 - Cold Brew & Kombucha Canning",
+      "machines": ["M07", "M08"],
+      "capacity_per_hour": 28000,
+      "current_utilization": 0.65,
+      "status": "constrained",
+      "bottleneck_machine": "M07"
+    }
+  ],
+  "downstream_stages": [
+    {
+      "id": "QC01",
+      "name": "High-Speed Vision & Gamma Fill Inspector",
+      "type": "qc",
+      "capacity_per_hour": 36000,
+      "current_queue": 142,
+      "queue_capacity": 300,
+      "status": "warning"
+    },
+    {
+      "id": "QC02",
+      "name": "Acoustic Resonance & Seam Integrity Station",
+      "type": "qc",
+      "capacity_per_hour": 36000,
+      "current_queue": 45,
+      "queue_capacity": 300,
+      "status": "nominal"
+    },
+    {
+      "id": "PACK01",
+      "name": "Automated Sleever, Tray-Packer & Palletizer",
+      "type": "packaging",
+      "capacity_per_hour": 60000,
+      "status": "nominal"
+    },
+    {
+      "id": "SHIP01",
+      "name": "Cold-Chain Outbound Logistics Dock",
+      "type": "shipping",
+      "sla_deadline_hours": 8,
+      "status": "at_risk"
+    }
+  ]
+}

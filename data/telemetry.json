@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-20T23:25:00Z",
+  "active_shift": "Shift 2 (Night Operations)",
+  "total_factory_output_units": 8200,
+  "total_factory_target_units": 10000,
+  "overall_equipment_effectiveness": 0.82,
+  "quality_yield_rate": 0.968,
+  "current_power_consumption_kw": 456.2,
+  "total_energy_today_kwh": 17890,
+  "co2_emissions_kg": 7156,
+  "active_alerts": [
+    {
+      "id": "ALT-071",
+      "severity": "critical",
+      "machine": "M07",
+      "line": "L3",
+      "metric": "Spindle Temperature",
+      "value": "84.6°C",
+      "threshold": "75.0°C",
+      "message": "Thermal runaway protection throttling feed rate by 38%."
+    },
+    {
+      "id": "ALT-072",
+      "severity": "warning",
+      "machine": "QC01",
+      "line": "INSPECTION",
+      "metric": "Buffer Occupancy",
+      "value": "94.6%",
+      "threshold": "85.0%",
+      "message": "Buffer queue bottleneck caused by batch re-inspection."
+    }
+  ]
+}

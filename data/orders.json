@@ -1,0 +1,35 @@
+[
+  {
+    "order_id": "ORD-2026-901",
+    "customer": "AeroDynamics Global",
+    "part_sku": "SKU-TITAN-BRACKET",
+    "target_units": 4000,
+    "completed_units": 3120,
+    "allocated_line": "L3",
+    "sla_deadline_hours": 6.5,
+    "status": "at_risk",
+    "penalty_per_hour_usd": 2500
+  },
+  {
+    "order_id": "ORD-2026-902",
+    "customer": "Apex Robotics Ltd",
+    "part_sku": "SKU-HOUSING-ARM",
+    "target_units": 3500,
+    "completed_units": 2980,
+    "allocated_line": "L1",
+    "sla_deadline_hours": 12.0,
+    "status": "on_track",
+    "penalty_per_hour_usd": 1200
+  },
+  {
+    "order_id": "ORD-2026-903",
+    "customer": "Terra Electric Power",
+    "part_sku": "SKU-THERMAL-PLATE",
+    "target_units": 2500,
+    "completed_units": 2100,
+    "allocated_line": "L2",
+    "sla_deadline_hours": 18.0,
+    "status": "on_track",
+    "penalty_per_hour_usd": 1500
+  }
+]

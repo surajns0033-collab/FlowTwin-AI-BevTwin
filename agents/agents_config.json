@@ -1,0 +1,55 @@
+{
+  "name": "flowtwin-factory-agents",
+  "version": "1.0.0",
+  "runtime": "google-adk-python",
+  "platform": "Google Gemini Enterprise Agent Platform",
+  "models": {
+    "orchestrator": "gemini-3.8-flash",
+    "observer": "gemini-3.5-flash-lite",
+    "causal": "gemini-3.8-flash",
+    "simulator": "gemini-3.8-flash",
+    "optimizer": "gemini-3.8-flash"
+  },
+  "tools": [
+    {
+      "name": "get_factory_telemetry",
+      "description": "Reads compact factory operational state delta",
+      "module": "agents.adk_factory_agent"
+    },
+    {
+      "name": "run_failure_simulation",
+      "description": "Deterministic simulation of machine downtime impact",
+      "module": "simulation.production"
+    },
+    {
+      "name": "run_energy_optimization_simulation",
+      "description": "Deterministic load shifting and peak shaving calculation",
+      "module": "simulation.energy"
+    },
+    {
+      "name": "search_factory_knowledge",
+      "description": "Grounded SOP retrieval via Vertex AI Agent Search",
+      "module": "agents.agent_search"
+    }
+  ],
+  "datastores": {
+    "state": {
+      "type": "google-cloud-firestore",
+      "collections": [
+        "factories",
+        "machines",
+        "production_state",
+        "inventory_state",
+        "quality_state",
+        "energy_state",
+        "scenarios",
+        "agent_sessions",
+        "alerts"
+      ]
+    },
+    "documents": {
+      "type": "google-cloud-storage",
+      "bucket": "flowtwin-ai-factory-storage"
+    }
+  }
+}
