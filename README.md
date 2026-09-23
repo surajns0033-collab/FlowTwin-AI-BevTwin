@@ -27,7 +27,7 @@
 ## 📑 Table of Contents
 
 - [🏭 Industrial Beverage Plant Topology](#-industrial-beverage-plant-topology)
-- [💡 Core Philosophy: Decoupled AI & Physics](#-core-philosophy-decoupled-ai--physics)
+- [💡 Core Philosophy: Decoupled AI & Deterministic Simulation](#-core-philosophy-decoupled-ai--deterministic-simulation)
 - [🌟 Key Engineering Innovations](#-key-engineering-innovations)
   - [1. 3D Twin & Conveyor Packaging Kinetics](#1-3d-twin--conveyor-packaging-kinetics)
   - [2. Sensory AI & Telemetry Visualizations](#2-sensory-ai--telemetry-visualizations)
@@ -90,12 +90,12 @@ FlowTwin AI models an end-to-end multi-line industrial beverage facility (`BEVTW
 
 ---
 
-## 💡 Core Philosophy: Decoupled AI & Physics
+## 💡 Core Philosophy: Decoupled AI & Deterministic Simulation
 
 ```
 ┌─────────────────────────┐       ┌───────────────────────────────┐       ┌──────────────────────────────┐
 │        AI THINKS        │  ──►  │        CODE CALCULATES        │  ──►  │     FRONTEND VISUALIZES      │
-│ Gemini 3.8 Flash + ADK  │       │  Deterministic Physics Engine │       │  Three.js / R3F Beverage     │
+│ Gemini 3.8 Flash + ADK  │       │   Deterministic Math Engine   │       │  Three.js / R3F Beverage     │
 │ Reasons over telemetry  │       │  Mass balance, delta kinetics │       │  3D Twin, Causal Ribbon,     │
 │ & HACCP/ISO standards   │       │  & thermodynamic simulation   │       │  Particles & Decision Tiles  │
 └─────────────────────────┘       └───────────────────────────────┘       └──────────────────────────────┘
@@ -105,7 +105,7 @@ Beverage manufacturing lines run at blinding speeds (1,200+ cans/minute). Unplan
 
 **FlowTwin AI strictly eliminates AI Hallucination:**
 - **AI (Gemini 3.8 Flash & Google ADK)** orchestrates hypotheses, extracts compact operational deltas, traverses physical dependency graphs, and drafts optimal decisions.
-- **Code (Deterministic Simulation Engine)** calculates physics, queue dynamics, energy caps, and capacity equations with zero hallucination.
+- **Code (Deterministic Simulation Engine)** calculates mass balance, queue dynamics, energy caps, and capacity equations with zero hallucination.
 - **Frontend (Three.js & React Three Fiber)** renders real-time 330ml beverage cans and PET bottles gliding on dynamic conveyors, overhead status orbs, glowing causal propagation ribbons, and particle entropy fields.
 
 ---
@@ -149,8 +149,8 @@ Built into the web application is a full **Dynamic Visual Network Studio** (`Net
 │ filling, QC, and logistics.       │ from telemetry to plan dispatch.  │
 ├───────────────────────────────────┼───────────────────────────────────┤
 │ 5. CAUSAL FORCE GRAPH             │ 6. SPECTRAL WAVEFORM INTELLIGENCE │
-│ Physics-based node graph showing  │ Multi-channel acoustic, vibration │
-│ exact upstream & downstream       │ and thermal spectral harmonics    │
+│ Dynamic force-directed graph      │ Multi-channel acoustic, vibration │
+│ showing upstream & downstream     │ and thermal spectral harmonics    │
 │ machine dependency cascades.      │ across production lines.          │
 └───────────────────────────────────┴───────────────────────────────────┘
 ```
