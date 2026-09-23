@@ -8,6 +8,7 @@
 [![Google Cloud Run](https://img.shields.io/badge/Google%20Cloud%20Run-Serverless-2496ED?style=for-the-badge&logo=google-cloud&logoColor=white)](https://cloud.google.com/run)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Theme](https://img.shields.io/badge/Theme-Manufacturing%3A%20Intelligent%20Operations%20%26%20Industrial%20Efficiency-00d2ff?style=for-the-badge)](https://aibuildercup.com/)
 [![Domain](https://img.shields.io/badge/Domain-High--Speed%20Beverage%20Canning%20%26%20Bottling-00f076?style=for-the-badge)](https://aibuildercup.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
